@@ -27,7 +27,7 @@ class _GreenCoverState extends State<GreenCover> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(15.0),
               child: Container(
                 alignment: Alignment.topLeft,
                 child: const Text(
@@ -99,24 +99,42 @@ class _GreenCoverState extends State<GreenCover> {
                   ),
               ],
             ),
-            const Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  Text(
-                    'Enter Data: ',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
-                  ),
-                  SizedBox(
-                    width: 100,
-                  ),
-                  Text(
-                    'Values: ',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
-                  ),
-                ],
+            const SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  top: 16, left: 16, right: 16, bottom: 8),
+              child: Container(
+                alignment: Alignment.topLeft,
+                child: const Text(
+                  'Enter Data: ',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                ),
               ),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 5.0, right: 5, bottom: 16),
+              child: Card(
+                elevation: 0,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                color: const Color.fromARGB(255, 243, 241, 241),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 10.0),
+                  child: TextFormField(
+                    decoration: const InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'eg: 123.456',
+                      hintStyle: TextStyle(
+                        color: Color.fromARGB(255, 99, 99, 99),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
