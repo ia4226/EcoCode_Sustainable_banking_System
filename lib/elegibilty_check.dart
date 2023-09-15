@@ -227,10 +227,84 @@ class EligibiltyPage extends StatelessWidget {
                   ),
                 ),
               ]),
-              const Text(
-                'Your Subsidizations',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-              )
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  const Padding(
+                    padding:
+                        EdgeInsets.only(top: 20.0, bottom: 10.0, left: 15.0),
+                    child: SizedBox(
+                      height: 22,
+                      width: double.infinity,
+                      child: Text(
+                        'Your Subsidizations',
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.w500),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 15.0, bottom: 15.0),
+                    child: SizedBox(
+                      height: 50,
+                      width: double.infinity,
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(1)),
+                        color: const Color.fromARGB(255, 255, 255, 255),
+                        elevation: 0,
+                        child: const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              Text(
+                                'Original Rate',
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.w500),
+                                textAlign: TextAlign.start,
+                              ),
+                              SizedBox(
+                                width: 200,
+                              ),
+                              Text('Value')
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 15.0, bottom: 15.0),
+                    child: SizedBox(
+                      height: 50,
+                      width: double.infinity,
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(1)),
+                        color: const Color.fromARGB(255, 255, 255, 255),
+                        elevation: 0,
+                        child: const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              Text(
+                                'Subsidized Rate',
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.w500),
+                                textAlign: TextAlign.start,
+                              ),
+                              SizedBox(
+                                width: 173,
+                              ),
+                              Text('Value')
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           )
         ],
