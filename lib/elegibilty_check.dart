@@ -11,7 +11,7 @@ class EligibiltyPage extends StatelessWidget {
         children: [
           const Text(
             'Subsidization Details',
-            style: TextStyle(fontSize: 28),
+            style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
             textAlign: TextAlign.start,
           ),
           Column(
@@ -19,8 +19,8 @@ class EligibiltyPage extends StatelessWidget {
               Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(
-                        left: 20, right: 20, top: 5.0, bottom: 5.0),
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 20, top: 5.0),
                     child: Row(
                       children: [
                         SizedBox(

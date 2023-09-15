@@ -1,4 +1,4 @@
-import 'package:ecocode_sbs/elegibilty_check.dart';
+import 'package:ecocode_sbs/green_cover.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,8 +11,9 @@ class EntryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData.light(useMaterial3: true),
-        home: const EligibiltyPage());
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.light(useMaterial3: true),
+      home: const GreenCover(),
+    );
   }
 }
